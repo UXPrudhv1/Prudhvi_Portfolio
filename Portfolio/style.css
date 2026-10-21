@@ -1083,6 +1083,36 @@ html[data-theme="dark"] .theme-toggle-sun {
   max-width: 760px;
 }
 
+.timeline-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-width: 760px;
+}
+
+.timeline-list li {
+  position: relative;
+  padding-left: 15px;
+  font-size: 13px;
+  line-height: 1.65;
+  color: var(--muted);
+}
+
+.timeline-list li::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 8px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--accent);
+  opacity: 0.85;
+}
+
 .timeline-type {
   justify-self: end;
   align-self: start;
